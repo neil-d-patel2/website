@@ -1,2 +1,1 @@
-console.log("Hello, Neil");
-console.log("Hello");
+console.log("Compiler check")
