@@ -14,17 +14,17 @@ body {
     box-sizing: border-box;
   }
   
-  /* Main name */
+
   .htags {
     font-size: 3rem;
-    margin-bottom: 30px;  /* Increased spacing below name */
+    margin-bottom: 30px;  
   }
   
-  /* Link + contact section */
+
   .atags {
     font-size: 1.2rem;
-    margin-bottom: 20px;  /* More space before next section */
-    line-height: 1.6;     /* Better line spacing */
+    margin-bottom: 20px;  
+    line-height: 1.6;   
   }
   
   .atags p {
@@ -32,7 +32,7 @@ body {
     margin-bottom: 0;
   }
   
-  /* Link styling */
+
   .toptag {
     text-decoration: none;
     color: #0000ee;
@@ -42,11 +42,11 @@ body {
     text-decoration: underline;
   }
   
-  /* Info section */
+
   .info-section p {
     font-size: 1.2rem;
     font-weight: normal;
-    margin: 15px 0;       /* Add vertical spacing between h2s */
-    line-height: 1.6;     /* More readable multi-line h2s */
+    margin: 15px 0;       
+    line-height: 1.6;     
   }
   
