@@ -1,15 +1,15 @@
 :root {
-  --bg: #f7f7f5;
-  --text: #1c1c1a;
-  --muted: #6b6b68;
-  --border: #d8d8d5;
-}
-
-body.dark {
   --bg: #141412;
   --text: #eeeeec;
   --muted: #888885;
   --border: #2e2e2b;
+}
+
+body.light {
+  --bg: #f7f7f5;
+  --text: #1c1c1a;
+  --muted: #6b6b68;
+  --border: #d8d8d5;
 }
 
 * {
