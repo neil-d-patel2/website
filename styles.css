@@ -30,12 +30,14 @@ body {
 a {
   color: var(--text);
   text-decoration: underline;
-  text-decoration-color: var(--border);
+  text-decoration-color: var(--text);
   text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: 500;
 }
 
 a:hover {
-  text-decoration-color: var(--text);
+  opacity: 0.65;
 }
 
 .container {
@@ -74,8 +76,6 @@ a:hover {
 }
 
 .info-section {
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
   margin-bottom: 32px;
 }
 
