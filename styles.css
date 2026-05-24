@@ -1,17 +1,17 @@
 :root {
   --bg: #141412;
-  --text: #eeeeec;
+  --text: #e8e8e6;
   --muted: #888885;
-  --border: #2e2e2b;
-  --accent: #c9a85c;
+  --link: #6ba3e8;
+  --hr: #2a2a28;
 }
 
 body.light {
-  --bg: #f7f7f5;
-  --text: #1c1c1a;
-  --muted: #6b6b68;
-  --border: #d8d8d5;
-  --accent: #9a6f2e;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666;
+  --link: #2563eb;
+  --hr: #e2e2e2;
 }
 
 * {
@@ -23,83 +23,57 @@ body {
   padding: 0;
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.65;
+  line-height: 1.7;
   transition: background-color 0.15s, color 0.15s;
 }
 
 a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-  font-weight: 500;
+  color: var(--link);
+  text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.75;
+  text-decoration: underline;
 }
 
 .container {
-  max-width: 640px;
+  max-width: 650px;
   margin: 0 auto;
-  padding: 64px 24px 80px;
+  padding: 60px 24px 80px;
 }
 
-.htags {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0 0 28px;
-  letter-spacing: -0.01em;
+h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 14px;
 }
 
-.atags {
-  font-size: 0.875rem;
+p {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+}
+
+.muted {
   color: var(--muted);
-  margin-bottom: 36px;
-  line-height: 1.6;
+  font-size: 0.85rem;
 }
 
-.atags p {
-  margin: 8px 0 0;
+hr {
+  border: none;
+  border-top: 1px solid var(--hr);
+  margin: 28px 0;
 }
 
-.atags strong {
-  color: var(--text);
-  font-weight: 500;
+ul {
+  padding-left: 20px;
+  margin: 0 0 12px;
 }
 
-.toptag {
-  margin-right: 14px;
-  font-size: 0.875rem;
-  color: var(--accent);
-}
-
-.info-section {
-  margin-bottom: 32px;
-}
-
-.info-section p {
-  font-size: 0.875rem;
-  margin: 0 0 14px;
-  color: var(--text);
-}
-
-.info-section ul {
-  margin: 0 0 14px;
-  padding-left: 18px;
-}
-
-.info-section li {
-  font-size: 0.875rem;
+li {
+  font-size: 0.9rem;
   margin-bottom: 6px;
-  color: var(--text);
-}
-
-.color {
-  color: var(--accent);
 }
 
 .theme-btn {
@@ -109,12 +83,11 @@ a:hover {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 1px solid var(--border);
+  border: 1px solid var(--hr);
   background: transparent;
   color: var(--muted);
   cursor: pointer;
   font-size: 13px;
-  line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
