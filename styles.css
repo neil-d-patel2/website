@@ -99,3 +99,24 @@ li {
   border-color: var(--text);
   color: var(--text);
 }
+
+.corner-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--hr);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.corner-btn:hover {
+  border-color: var(--text);
+  color: var(--text);
+  text-decoration: none;
+}
