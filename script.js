@@ -1,8 +1,7 @@
-// ---------- theme: respect saved choice, fall back to system ----------
+// ---------- theme: default to the light (#fafaf8) canvas; dark only if chosen ----------
 (function () {
   const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === 'dark' || (!saved && prefersDark)) {
+  if (saved === 'dark') {
     document.body.classList.add('dark');
   }
 
