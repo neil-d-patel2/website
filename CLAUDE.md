@@ -25,14 +25,15 @@ article" (think Anthropic/OpenAI engineering posts). No build step, no framework
 
 ## Coding Standards / Design System
 
-- Fonts (Google Fonts, loaded via `<link>` in each HTML head):
-  **Newsreader** (serif) for title + body + section headings; **Inter** (sans) for small
-  UI labels (byline label, TOC, tag chip, share). Variables: `--font-serif`, `--font-sans`.
+- Font: **Inter** only (single family), Google Fonts via `<link>` in each HTML head, used
+  throughout — title/section headings at weight 600 with tight tracking (~-0.035em title),
+  body at 400. Variable: `--font-sans`. (Originally Newsreader serif to match the reference;
+  switched to all-Inter per the owner's request.)
 - Color: off-white canvas `--bg: #fafaf8` (per design brief). Monochrome/editorial — links
   are text-colored with a subtle underline (`--link-line`), NOT blue. Dark theme is a warm
   charcoal `#1a1916`. All colors are tokens in `:root` / `body.dark`.
-- Layout width tokens: `--wrap: 952px` = sidebar 200px + gap 72px + main 680px. Main column
-  capped at 680px for a ~70-char measure.
+- Layout width tokens: `--wrap: 932px` = sidebar 200px + gap 72px + main 660px. Main column
+  capped at 660px for a ~70-char measure.
 - Single column below 880px (TOC becomes a horizontal wrapped list); tighter padding < 560px.
 - `prefers-reduced-motion` disables the load fade + smooth scroll.
 

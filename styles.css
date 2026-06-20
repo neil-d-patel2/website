@@ -1,6 +1,6 @@
 /* ============================================================
    Neil Patel — editorial research-lab portfolio
-   Type: Newsreader (serif, display + body) + Inter (UI labels)
+   Type: Inter (single family, used throughout)
    ============================================================ */
 
 :root {
@@ -13,10 +13,9 @@
   --link-line:     #c9c6bb;
   --code-bg:       #f0efe9;
 
-  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
-  --wrap: 952px;
+  --wrap: 932px;
 }
 
 body.dark {
@@ -38,9 +37,10 @@ body {
   margin: 0;
   background-color: var(--bg);
   color: var(--text);
-  font-family: var(--font-serif);
-  font-size: 18px;
-  line-height: 1.72;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   transition: background-color 0.25s ease, color 0.25s ease;
@@ -60,11 +60,10 @@ body {
 .masthead { padding-top: 92px; }
 
 .title {
-  font-family: var(--font-serif);
-  font-weight: 500;
-  font-size: clamp(2.15rem, 1.4rem + 2.6vw, 3.1rem);
-  line-height: 1.1;
-  letter-spacing: -0.018em;
+  font-weight: 600;
+  font-size: clamp(2.1rem, 1.35rem + 2.6vw, 3.05rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
   text-align: center;
   margin: 0;
   max-width: 760px;
@@ -72,12 +71,12 @@ body {
 }
 
 .subtitle {
-  font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(1rem, 0.94rem + 0.35vw, 1.16rem);
+  font-size: clamp(1rem, 0.94rem + 0.35vw, 1.15rem);
+  letter-spacing: -0.011em;
   color: var(--muted);
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.55;
   max-width: 540px;
   margin: 18px auto 0;
 }
@@ -92,7 +91,6 @@ body {
 }
 
 .byline-label {
-  font-family: var(--font-sans);
   font-size: 0.68rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -102,7 +100,6 @@ body {
 }
 
 .byline-links {
-  font-family: var(--font-sans);
   font-size: 0.9rem;
   color: var(--text);
   display: flex;
@@ -113,9 +110,8 @@ body {
 .byline-links .sep { color: var(--faint); }
 
 .tag {
-  font-family: var(--font-sans);
   font-size: 0.7rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: var(--muted);
   border: 1px solid var(--border-strong);
   border-radius: 6px;
@@ -128,7 +124,7 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: 200px minmax(0, 680px);
+  grid-template-columns: 200px minmax(0, 660px);
   column-gap: 72px;
   margin-top: 64px;
   padding-top: 48px;
@@ -141,7 +137,6 @@ body {
   position: sticky;
   top: 44px;
   align-self: start;
-  font-family: var(--font-sans);
 }
 
 .toc-label {
@@ -179,7 +174,6 @@ body {
   align-items: center;
   gap: 6px;
   margin-top: 30px;
-  font-family: var(--font-sans);
   font-size: 0.8rem;
   color: var(--muted);
   background: none;
@@ -195,22 +189,22 @@ body {
 
 /* ---------- article content ---------- */
 
-.content { max-width: 680px; min-width: 0; }
+.content { max-width: 660px; min-width: 0; }
 
 .lede {
   font-style: italic;
-  font-size: 1.14rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
   color: var(--muted);
   margin: 0 0 40px;
 }
 
 .content h2 {
-  font-family: var(--font-serif);
   font-weight: 600;
-  font-size: clamp(1.3rem, 1.18rem + 0.45vw, 1.6rem);
-  line-height: 1.22;
-  letter-spacing: -0.01em;
-  margin: 48px 0 16px;
+  font-size: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 48px 0 14px;
   scroll-margin-top: 32px;
 }
 
@@ -225,7 +219,7 @@ body {
 
 .content code {
   font-family: 'SFMono-Regular', ui-monospace, Menlo, Consolas, monospace;
-  font-size: 0.88em;
+  font-size: 0.86em;
   background: var(--code-bg);
   padding: 1px 5px;
   border-radius: 4px;
@@ -287,7 +281,6 @@ a:hover { text-decoration-color: currentColor; }
   background: var(--bg);
   color: var(--muted);
   cursor: pointer;
-  font-family: var(--font-sans);
   font-size: 0.78rem;
   text-decoration: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -325,7 +318,7 @@ a:hover { text-decoration-color: currentColor; }
   .page { padding: 0 20px 96px; }
   .masthead { padding-top: 64px; }
   .byline { margin-top: 40px; }
-  body { font-size: 17px; }
+  body { font-size: 16px; }
 }
 
 /* ---------- motion / load ---------- */
