@@ -4,23 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Notes — Neil Patel</title>
+  <meta name="description" content="Notes — a small collection of things Neil Patel has made outside of code." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Notes</h1>
+  <div class="page">
+    <header class="masthead">
+      <h1 class="title">Notes</h1>
+      <p class="subtitle">A small collection of things I've made outside of code.</p>
 
-    <p class="muted">A small collection of things I've made outside of code.</p>
+      <div class="byline">
+        <div class="byline-left">
+          <p class="byline-label">Written by</p>
+          <p class="byline-links"><a href="index.html">Neil Patel</a></p>
+        </div>
+        <span class="tag">Work in progress</span>
+      </div>
+    </header>
 
-    <hr>
+    <div class="layout">
+      <aside class="sidebar">
+        <p class="toc-label">Jump to:</p>
+        <div class="toc">
+          <a href="index.html">Back home</a>
+        </div>
+        <button class="share" type="button" aria-label="Share this page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.6" y1="13.5" x2="15.4" y2="17.5"></line><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"></line>
+          </svg>
+          <span class="share-text">Share this page</span>
+        </button>
+      </aside>
 
-    <p>
-      This page is a work in progress — check back soon.
-    </p>
+      <main class="content">
+        <p class="lede">This page is a work in progress — check back soon.</p>
+      </main>
+    </div>
   </div>
 
-  <a class="corner-btn" href="index.html">home</a>
-  <button class="theme-btn" aria-label="Toggle theme">◐</button>
+  <a class="corner-btn" href="index.html">← Home</a>
+  <button class="theme-btn" type="button" aria-label="Toggle color theme" aria-pressed="false">◐</button>
   <script src="script.js"></script>
 </body>
 </html>
