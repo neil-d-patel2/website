@@ -30,18 +30,24 @@
   if (!map.size) return;
 
   let current = null;
-  const setActive = (link) => {
-    if (link === current) return;
-    if (current) current.classList.remove('active');
-    if (link) link.classList.add('active');
-    current = link;
+  const setActive = (section) => {
+    if (section === current) return;
+    if (current) {
+      map.get(current).classList.remove('active');
+      current.classList.remove('active-section');
+    }
+    if (section) {
+      map.get(section).classList.add('active');
+      section.classList.add('active-section');
+    }
+    current = section;
   };
 
   const observer = new IntersectionObserver((entries) => {
     const visible = entries
       .filter((e) => e.isIntersecting)
       .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-    if (visible.length) setActive(map.get(visible[0].target));
+    if (visible.length) setActive(visible[0].target);
   }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
 
   map.forEach((_, section) => observer.observe(section));
