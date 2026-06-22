@@ -6,7 +6,7 @@
 :root {
   --bg:            #c5bebe;
   --text:          #000000;
-  --blue:          #2c85e8;
+  --blue:          #2073FD;
   --muted:         #6e6c66;
   --faint:         #9a988f;
   --border:        #e6e4dc;
@@ -69,7 +69,45 @@ body {
   margin: 0;
   max-width: 760px;
   margin-inline: auto;
-  color: var(--blue);
+  color: var(--text);
+}
+
+.contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-right: 2px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--bg);
+  color: var(--muted);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-btn svg { width: 15px; height: 15px; }
+
+.contact-btn:hover {
+  border-color: var(--text);
+  color: var(--text);
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .subtitle {
