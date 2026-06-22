@@ -4,8 +4,9 @@
    ============================================================ */
 
 :root {
-  --bg:            #fffceb;
-  --text:          #2c85e8;
+  --bg:            #c5bebe;
+  --text:          #000000;
+  --blue:          #2c85e8;
   --muted:         #6e6c66;
   --faint:         #9a988f;
   --border:        #e6e4dc;
@@ -68,6 +69,7 @@ body {
   margin: 0;
   max-width: 760px;
   margin-inline: auto;
+  color: var(--blue);
 }
 
 .subtitle {
@@ -206,6 +208,7 @@ body {
   letter-spacing: -0.025em;
   margin: 48px 0 14px;
   scroll-margin-top: 32px;
+  color: var(--blue);
 }
 
 .content section:first-of-type h2 { margin-top: 0; }
