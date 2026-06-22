@@ -20,7 +20,7 @@
 }
 
 body.dark {
-  --bg:            #1a1916;
+  --bg:            #c5bebe;
   --text:          #ece9e2;
   --muted:         #9d9b92;
   --faint:         #6f6d65;
@@ -252,6 +252,10 @@ body {
 
 /* only the section the reader is currently in gets the blue heading */
 .content section.active-section h2 { color: var(--blue); }
+
+/* on the light dark-mode canvas, keep section headings black for contrast */
+body.dark .content h2 { color: #000000; }
+body.dark .content section.active-section h2 { color: var(--blue); }
 
 .content section:first-of-type h2 { margin-top: 0; }
 
