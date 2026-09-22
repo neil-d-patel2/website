@@ -1,17 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const links = [
-  // About lives at the root, but /about resolves to it too.
-  { label: 'About', to: '/', matches: ['/', '/about'] },
   { label: 'Blog', to: '/blog', matches: ['/blog'] },
   { label: 'Research', to: '/research', matches: ['/research'] },
-  { label: 'Ventures', to: '/ventures', matches: ['/ventures'] },
 ];
 
 const contactLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/neil-patel-b6724038b/' },
   { label: 'GitHub', href: 'https://github.com/neil-d-patel2' },
-  { label: 'Email', href: 'mailto:npate137@jh.edu' },
+  { label: 'neildrp5@gmail.com', href: 'mailto:neildrp5@gmail.com' },
 ];
 
 export default function Navbar() {
