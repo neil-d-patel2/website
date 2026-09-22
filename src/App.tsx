@@ -7,7 +7,7 @@ import Ventures from '@/pages/Ventures';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<Layout />}>
           {/* About is the landing page. /about stays valid for direct links. */}
