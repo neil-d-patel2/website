@@ -8,6 +8,12 @@ const links = [
   { label: 'Ventures', to: '/ventures', matches: ['/ventures'] },
 ];
 
+const contactLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/neil-patel-b6724038b/' },
+  { label: 'GitHub', href: 'https://github.com/neil-d-patel2' },
+  { label: 'Email', href: 'mailto:npate137@jh.edu' },
+];
+
 export default function Navbar() {
   const { pathname } = useLocation();
 
@@ -27,6 +33,18 @@ export default function Navbar() {
           </Link>
         ))}
       </nav>
+      <div className="contact-links" aria-label="Contact links">
+        {contactLinks.map(({ label, href }) => (
+          <a
+            key={label}
+            href={href}
+            target={href.startsWith('http') ? '_blank' : undefined}
+            rel={href.startsWith('http') ? 'noreferrer' : undefined}
+          >
+            {label}
+          </a>
+        ))}
+      </div>
     </header>
   );
 }

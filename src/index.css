@@ -60,6 +60,13 @@ a:focus-visible {
   margin-top: 10px;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 8px;
+}
+
 h1,
 h2,
 p {
@@ -95,6 +102,11 @@ p {
 
 .text-section p + p {
   margin-top: 12px;
+}
+
+.text-section ul {
+  margin: 0;
+  padding-left: 20px;
 }
 
 .post-list {
